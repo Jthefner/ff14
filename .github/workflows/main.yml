@@ -12,7 +12,3 @@ objShell.SendKeys "{TAB}"
 WScript.Sleep 100
 objShell.SendKeys "{ENTER}"
 Set objShell = Nothing
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
