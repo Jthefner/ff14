@@ -1,0 +1,18 @@
+Dim objShell
+Set objShell = WScript.CreateObject( "WScript.Shell" )
+objShell.Exec("[COLOR=#00ffff]C:\Program Files (x86)\SquareEnix\FINAL FANTASY XIV - A Realm Reborn\boot\ffxivboot.exe[/COLOR]")
+WScript.Sleep [COLOR=#ff0000]8000[/COLOR]
+objShell.SendKeys "[COLOR=#00ffff]PASSWORD[/COLOR]"
+WScript.Sleep 100
+objShell.SendKeys "{ENTER}"
+WScript.Sleep [COLOR=#ff0000]4000[/COLOR]
+objShell.SendKeys "{ENTER}"
+WScript.Sleep [COLOR=#ff0000]3000[/COLOR]
+objShell.SendKeys "{TAB}"
+WScript.Sleep 100
+objShell.SendKeys "{ENTER}"
+Set objShell = Nothing
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
